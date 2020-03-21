@@ -11,10 +11,17 @@ public class PlayerController : MonoBehaviour
     //Vector declarations:
         Vector2 movementInput;
         Vector2 movementVelocity;
+        Vector2 mousePosition;
+        Vector2 directionToLookAt;
 
     //Float declarations:
         float thrustSpeed;
         float brakeSpeed;
+        float rotationSpeed;
+        float crosshairThresholdRadius;
+        float accelerationInput;
+        float lateralAccelerationInput;
+        float accelerationSpeed;
 
     //Bool declarations:
         bool isBraking;
@@ -31,7 +38,7 @@ public class PlayerController : MonoBehaviour
         //Speed defaults:
             thrustSpeed = 5f;
             brakeSpeed = 2f;
-
+            rotationSpeed = 4f;
 
     }
 
@@ -44,8 +51,11 @@ public class PlayerController : MonoBehaviour
         //Calculate velocity based on input and thrust speed:
             if(!isBraking)
             {
-                movementVelocity = movementInput * thrustSpeed;
+                accelerationSpeed = accelerationInput * thrustSpeed;
             }
+
+        //Rotate towards mouse position:
+            transform.up = Vector2.Lerp(transform.up, mousePosition, rotationSpeed * Time.deltaTime);
     }
 
     void FixedUpdate()
@@ -55,7 +65,11 @@ public class PlayerController : MonoBehaviour
             //Thrust/Move
                 if(!isBraking)
                 {
-                    myRigidbody.AddForce(movementInput);
+                    myRigidbody.AddForce(mousePosition * accelerationSpeed);
+                        if(lateralAccelerationInput != 0)
+                        {
+                            myRigidbody.AddForce(new Vector2(lateralAccelerationInput * thrustSpeed, 0f));
+                        }
                 }
             //Brake
                 else
@@ -63,21 +77,27 @@ public class PlayerController : MonoBehaviour
                     myRigidbody.AddForce(-brakeSpeed * myRigidbody.velocity);
                 }
 
-
     }
     
     void InputManager()
     {
         //Vertical and Horizontal thrust:
-            movementInput = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
+            
+            accelerationInput = Input.GetAxis("Vertical");
+            lateralAccelerationInput = Input.GetAxis("Horizontal");
 
         //Brake input:
             isBraking = Input.GetKey("left ctrl") ? true : false;
-           
+
+        //Mouse position tracker:
+            mousePosition = Vector2.ClampMagnitude(Camera.main.ScreenToWorldPoint(Input.mousePosition), 1f);
+
+
         //Primary Weapon key    
             if (Input.GetMouseButtonDown(0))
             {
                 Debug.Log("Shoot.");
+                Debug.Log(mousePosition);
             }
                                    
         //Secondary Weapon Key
