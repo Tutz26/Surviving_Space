@@ -6,7 +6,7 @@ public class PlayerController : MonoBehaviour
 {
     //Object and component declarations:
         Rigidbody2D myRigidbody;
-
+        Camera cam;
 
     //Vector declarations:
         Vector2 movementInput;
@@ -35,6 +35,9 @@ public class PlayerController : MonoBehaviour
         //get rigidbody component, must be dynamic to use unity physics:
             myRigidbody = this.GetComponent<Rigidbody2D>();
 
+        //Other objects initialization;
+            cam = Camera.main;
+
         //Speed defaults:
             thrustSpeed = 5f;
             brakeSpeed = 2f;
@@ -54,8 +57,11 @@ public class PlayerController : MonoBehaviour
                 accelerationSpeed = accelerationInput * thrustSpeed;
             }
 
+        //Calculate direction from mouse to player.
+            directionToLookAt = (mousePosition - (Vector2)  this.transform.position).normalized;
+
         //Rotate towards mouse position:
-            transform.up = Vector2.Lerp(transform.up, mousePosition, rotationSpeed * Time.deltaTime);
+            transform.up = Vector2.Lerp(transform.up, directionToLookAt, rotationSpeed * Time.deltaTime);
     }
 
     void FixedUpdate()
@@ -65,7 +71,7 @@ public class PlayerController : MonoBehaviour
             //Thrust/Move
                 if(!isBraking)
                 {
-                    myRigidbody.AddForce(mousePosition * accelerationSpeed);
+                    myRigidbody.AddForce(directionToLookAt * accelerationSpeed);
                         if(lateralAccelerationInput != 0)
                         {
                             myRigidbody.AddForce(new Vector2(lateralAccelerationInput * thrustSpeed, 0f));
@@ -89,15 +95,19 @@ public class PlayerController : MonoBehaviour
         //Brake input:
             isBraking = Input.GetKey("left ctrl") ? true : false;
 
-        //Mouse position tracker:
-            mousePosition = Vector2.ClampMagnitude(Camera.main.ScreenToWorldPoint(Input.mousePosition), 1f);
+        //Mouse position tracker based on camera:
+            mousePosition = cam.ScreenToWorldPoint(Input.mousePosition);
 
+            if(Input.GetKey("space"))
+            {
+                 Debug.Log(mousePosition);
+            }
 
         //Primary Weapon key    
             if (Input.GetMouseButtonDown(0))
             {
                 Debug.Log("Shoot.");
-                Debug.Log(mousePosition);
+               
             }
                                    
         //Secondary Weapon Key
