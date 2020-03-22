@@ -71,10 +71,13 @@ public class PlayerController : MonoBehaviour
             //Thrust/Move
                 if(!isBraking)
                 {
-                    myRigidbody.AddForce(directionToLookAt * accelerationSpeed);
                         if(lateralAccelerationInput != 0)
                         {
-                            myRigidbody.AddForce(new Vector2(lateralAccelerationInput * thrustSpeed, 0f));
+                            myRigidbody.AddRelativeForce(new Vector2((lateralAccelerationInput * thrustSpeed), 0f));
+                        }
+                        else
+                        {
+                            myRigidbody.AddForce(directionToLookAt * accelerationSpeed);
                         }
                 }
             //Brake
