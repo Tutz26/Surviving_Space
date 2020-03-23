@@ -21,10 +21,9 @@ public class CameraController : MonoBehaviour
     void Start()
     {
         playerObject = GameObject.FindGameObjectWithTag("Player");
-        playerController = playerObject.GetComponent<PlayerController>();
 
         //Default values:
-            cameraFollowSpeed = 15f;
+            cameraFollowSpeed = 5f;
 
     }
 
