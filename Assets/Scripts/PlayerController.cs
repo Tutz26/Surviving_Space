@@ -25,6 +25,7 @@ public class PlayerController : MonoBehaviour
         float accelerationInput;
         float lateralAccelerationInput;
         float accelerationSpeed;
+        float shootingSpeed;
 
     //Bool declarations:
         bool isBraking;
@@ -51,6 +52,7 @@ public class PlayerController : MonoBehaviour
             lateralThrustSpeed = playerStats.playerPanningSpeed;
             brakeSpeed = playerStats.playerBrakeSpeed;
             rotationSpeed = playerStats.playerRotationSpeed;
+            shootingSpeed = playerStats.playerShootingSpeed;
 
     }
 
@@ -117,9 +119,11 @@ public class PlayerController : MonoBehaviour
 
         //Primary Weapon key    
             if (Input.GetMouseButtonDown(0))
-            {
-                firePoint.Shoot();
-               
+            {                
+                if(GameObject.FindGameObjectWithTag("chargeVFX") == null)
+                {
+                    firePoint.Shoot();             
+                }
             }
                                    
         //Secondary Weapon Key

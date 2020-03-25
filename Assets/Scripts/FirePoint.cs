@@ -6,9 +6,8 @@ public class FirePoint : MonoBehaviour
 {
 
     //Set the projectile
-        public GameObject projectilePrefab;
+        public GameObject chargePrefab;
     
-
     void Start()
     {
 
@@ -16,8 +15,10 @@ public class FirePoint : MonoBehaviour
 
 
     public void Shoot()
-    {
-        Instantiate(projectilePrefab, this.transform.position, this.transform.rotation);
+    {        
+        GameObject chargeVFX = Instantiate(chargePrefab, (Vector2) this.transform.position, this.transform.rotation);
+        chargeVFX.transform.parent = transform;
+
     }
 
 }
