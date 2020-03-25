@@ -6,7 +6,9 @@ public class PlayerController : MonoBehaviour
 {
     //Object and component declarations:
         Rigidbody2D myRigidbody;
+        PlayerStats playerStats;
         Camera cam;
+        FirePoint firePoint;
 
     //Vector declarations:
         Vector2 movementInput;
@@ -16,6 +18,7 @@ public class PlayerController : MonoBehaviour
 
     //Float declarations:
         float thrustSpeed;
+        float lateralThrustSpeed;
         float brakeSpeed;
         float rotationSpeed;
         float crosshairThresholdRadius;
@@ -32,16 +35,22 @@ public class PlayerController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        //Get player stats:            
+            playerStats = this.GetComponent<PlayerStats>();
+
         //get rigidbody component, must be dynamic to use unity physics:
             myRigidbody = this.GetComponent<Rigidbody2D>();
 
         //Other objects initialization;
             cam = Camera.main;
+            firePoint = GameObject.FindGameObjectWithTag("FirePoint").GetComponent<FirePoint>();
 
-        //Speed defaults:
-            thrustSpeed = 5f;
-            brakeSpeed = 2f;
-            rotationSpeed = 4f;
+        //Speed Values:
+
+            thrustSpeed = playerStats.playerSpeed;
+            lateralThrustSpeed = playerStats.playerPanningSpeed;
+            brakeSpeed = playerStats.playerBrakeSpeed;
+            rotationSpeed = playerStats.playerRotationSpeed;
 
     }
 
@@ -73,7 +82,7 @@ public class PlayerController : MonoBehaviour
                 {
                         if(lateralAccelerationInput != 0)
                         {
-                            myRigidbody.AddRelativeForce(new Vector2((lateralAccelerationInput * thrustSpeed), 0f));
+                            myRigidbody.AddRelativeForce(new Vector2((lateralAccelerationInput * lateralThrustSpeed), 0f));
                         }
                         else
                         {
@@ -88,7 +97,7 @@ public class PlayerController : MonoBehaviour
 
     }
     
-    void InputManager()
+    public void InputManager()
     {
         //Vertical and Horizontal thrust:
             
@@ -109,7 +118,7 @@ public class PlayerController : MonoBehaviour
         //Primary Weapon key    
             if (Input.GetMouseButtonDown(0))
             {
-                Debug.Log("Shoot.");
+                firePoint.Shoot();
                
             }
                                    
@@ -120,5 +129,6 @@ public class PlayerController : MonoBehaviour
             }
 
     }
+
 
 }
