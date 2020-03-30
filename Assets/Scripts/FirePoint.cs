@@ -10,7 +10,7 @@ public class FirePoint : MonoBehaviour
     
     void Start()
     {
-
+                 
     }
 
 

@@ -1,37 +1,37 @@
 fileFormatVersion: 2
-guid: 9cba4a34dd1d4c64baccea0b01f6c28a
+guid: 6815eabe99905a246ba53eebf383dc12
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4843859813598625124
-    second: VFX_Charge_Laser_Basic_0
+      213: 902126023059468668
+    second: VFX_Basic_Laser_Bullet_White_0
   - first:
-      213: 7384876591075016095
-    second: VFX_Charge_Laser_Basic_1
+      213: 9085301971598711426
+    second: VFX_Basic_Laser_Bullet_White_1
   - first:
-      213: 967608408627948180
-    second: VFX_Charge_Laser_Basic_2
+      213: -3523994007746550497
+    second: VFX_Basic_Laser_Bullet_White_2
   - first:
-      213: 5927551101758483859
-    second: VFX_Charge_Laser_Basic_3
+      213: 8545520119975471918
+    second: VFX_Basic_Laser_Bullet_White_3
   - first:
-      213: -5108054896717665209
-    second: VFX_Charge_Laser_Basic_4
+      213: -2820820527843207389
+    second: VFX_Basic_Laser_Bullet_White_4
   - first:
-      213: 6848657684887721320
-    second: VFX_Charge_Laser_Basic_5
+      213: 5905587393328900028
+    second: VFX_Basic_Laser_Bullet_White_5
   - first:
-      213: -5026198284231981704
-    second: VFX_Charge_Laser_Basic_6
+      213: 6948802047387374354
+    second: VFX_Basic_Laser_Bullet_White_6
   - first:
-      213: -3973766564293512596
-    second: VFX_Charge_Laser_Basic_7
+      213: -5949228000295106480
+    second: VFX_Basic_Laser_Bullet_White_7
   - first:
-      213: 1072614040526368228
-    second: VFX_Charge_Laser_Basic_8
+      213: -7744471329708124079
+    second: VFX_Basic_Laser_Bullet_White_8
   - first:
-      213: 5396722508347376758
-    second: VFX_Charge_Laser_Basic_9
+      213: 1947572981858515446
+    second: VFX_Basic_Laser_Bullet_White_9
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -116,7 +116,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: VFX_Charge_Laser_Basic_0
+      name: VFX_Basic_Laser_Bullet_White_0
       rect:
         serializedVersion: 2
         x: 0
@@ -130,14 +130,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c920aa4d92727ccb0800000000000000
-      internalID: -4843859813598625124
+      spriteID: c71781b96def48c00800000000000000
+      internalID: 902126023059468668
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: VFX_Charge_Laser_Basic_1
+      name: VFX_Basic_Laser_Bullet_White_1
       rect:
         serializedVersion: 2
         x: 320
@@ -151,14 +151,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f9dbf11022a5c7660800000000000000
-      internalID: 7384876591075016095
+      spriteID: 28a1c46d10a751e70800000000000000
+      internalID: 9085301971598711426
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: VFX_Charge_Laser_Basic_2
+      name: VFX_Basic_Laser_Bullet_White_2
       rect:
         serializedVersion: 2
         x: 0
@@ -172,14 +172,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 49a23f598b2ad6d00800000000000000
-      internalID: 967608408627948180
+      spriteID: f1569a1fe12481fc0800000000000000
+      internalID: -3523994007746550497
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: VFX_Charge_Laser_Basic_3
+      name: VFX_Basic_Laser_Bullet_White_3
       rect:
         serializedVersion: 2
         x: 320
@@ -193,14 +193,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 39d2a405254e24250800000000000000
-      internalID: 5927551101758483859
+      spriteID: e2b6714e549c79670800000000000000
+      internalID: 8545520119975471918
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: VFX_Charge_Laser_Basic_4
+      name: VFX_Basic_Laser_Bullet_White_4
       rect:
         serializedVersion: 2
         x: 0
@@ -214,14 +214,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 74ce2f3922b8c19b0800000000000000
-      internalID: -5108054896717665209
+      spriteID: 32796cedcae6ad8d0800000000000000
+      internalID: -2820820527843207389
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: VFX_Charge_Laser_Basic_5
+      name: VFX_Basic_Laser_Bullet_White_5
       rect:
         serializedVersion: 2
         x: 320
@@ -235,14 +235,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8655bffe0e15b0f50800000000000000
-      internalID: 6848657684887721320
+      spriteID: cb7e461f17cd4f150800000000000000
+      internalID: 5905587393328900028
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: VFX_Charge_Laser_Basic_6
+      name: VFX_Basic_Laser_Bullet_White_6
       rect:
         serializedVersion: 2
         x: 0
@@ -256,14 +256,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 875cca95a4b5f3ab0800000000000000
-      internalID: -5026198284231981704
+      spriteID: 213180155aa1f6060800000000000000
+      internalID: 6948802047387374354
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: VFX_Charge_Laser_Basic_7
+      name: VFX_Basic_Laser_Bullet_White_7
       rect:
         serializedVersion: 2
         x: 320
@@ -277,14 +277,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c62f5fa1d585ad8c0800000000000000
-      internalID: -3973766564293512596
+      spriteID: 0584a9277a8107da0800000000000000
+      internalID: -5949228000295106480
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: VFX_Charge_Laser_Basic_8
+      name: VFX_Basic_Laser_Bullet_White_8
       rect:
         serializedVersion: 2
         x: 0
@@ -298,14 +298,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4edaba279c0b2ee00800000000000000
-      internalID: 1072614040526368228
+      spriteID: 158dc8b8b5c168490800000000000000
+      internalID: -7744471329708124079
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: VFX_Charge_Laser_Basic_9
+      name: VFX_Basic_Laser_Bullet_White_9
       rect:
         serializedVersion: 2
         x: 320
@@ -319,8 +319,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 674866d378205ea40800000000000000
-      internalID: 5396722508347376758
+      spriteID: 6f933ddee4b270b10800000000000000
+      internalID: 1947572981858515446
       vertices: []
       indices: 
       edges: []

@@ -17,6 +17,7 @@ public class PlayerController : MonoBehaviour
         Vector2 directionToLookAt;
 
     //Float declarations:
+
         float thrustSpeed;
         float lateralThrustSpeed;
         float brakeSpeed;
@@ -36,6 +37,11 @@ public class PlayerController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+
+
+        //Material Collor Test
+            // this.GetComponent<Renderer>().material.color = new Color(100F,1F,1F,1F); 
+
         //Get player stats:            
             playerStats = this.GetComponent<PlayerStats>();
 

@@ -13,6 +13,7 @@ public class CameraController : MonoBehaviour
             Vector2 newPosition;
 
         //float declarations:
+            public float armLength = 8.35f;
             float cameraFollowSpeed;
             float cameraRotationSpeed;
 
@@ -24,6 +25,10 @@ public class CameraController : MonoBehaviour
 
         //Default values:
             cameraFollowSpeed = 5f;
+
+        //Camera arm length
+            this.transform.position = new Vector2(this.transform.position.x, armLength);
+
 
     }
 

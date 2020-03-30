@@ -17,6 +17,9 @@ public class Projectile : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        this.GetComponent<Renderer>().material.color = new Color(1F,1F,100F,1F); 
+
+
         projectileRigidbody = this.GetComponent<Rigidbody2D>();
         projectileRigidbody.velocity = transform.up * projectileSpeed;
         initialPosition = (Vector2) this.transform.position;
