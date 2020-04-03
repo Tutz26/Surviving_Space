@@ -41,6 +41,6 @@ public class CameraController : MonoBehaviour
     void Update()
     {
         currentPosition = (Vector2) this.transform.position;
-        newPosition = (Vector2) playerObject.transform.position;
+        newPosition = new Vector2(playerObject.transform.position.x, playerObject.transform.position.y + armLength);
     }
 }

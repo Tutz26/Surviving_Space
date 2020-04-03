@@ -15,7 +15,7 @@ public class PlayerStats : MonoBehaviour
         //Speed values:
             public float playerSpeed = 5f;
             public float playerPanningSpeed = 3f;
-            public float playerRotationSpeed = 100f;
+            public float playerRotationSpeed = 0.8f;
             public float playerBrakeSpeed = 2f;
             public float playerShootingSpeed =1f;
 
