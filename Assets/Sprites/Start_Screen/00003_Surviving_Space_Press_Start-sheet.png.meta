@@ -1,0 +1,670 @@
+fileFormatVersion: 2
+guid: 5b7cf038dd513f745b1d3584d1c2565f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4386285027912845690
+    second: 00003_Surviving_Space_Press_Start-sheet_0
+  - first:
+      213: -1148610142629580753
+    second: 00003_Surviving_Space_Press_Start-sheet_1
+  - first:
+      213: -5547580969237031902
+    second: 00003_Surviving_Space_Press_Start-sheet_2
+  - first:
+      213: 4276608709877092948
+    second: 00003_Surviving_Space_Press_Start-sheet_3
+  - first:
+      213: 4868429911873233225
+    second: 00003_Surviving_Space_Press_Start-sheet_4
+  - first:
+      213: 6875065445377670048
+    second: 00003_Surviving_Space_Press_Start-sheet_5
+  - first:
+      213: -8235941874252690535
+    second: 00003_Surviving_Space_Press_Start-sheet_6
+  - first:
+      213: 5599076403205388930
+    second: 00003_Surviving_Space_Press_Start-sheet_7
+  - first:
+      213: 3540532236823135595
+    second: 00003_Surviving_Space_Press_Start-sheet_8
+  - first:
+      213: -5966873615850484585
+    second: 00003_Surviving_Space_Press_Start-sheet_9
+  - first:
+      213: 4598910800546875836
+    second: 00003_Surviving_Space_Press_Start-sheet_10
+  - first:
+      213: 2379175530322985929
+    second: 00003_Surviving_Space_Press_Start-sheet_11
+  - first:
+      213: 8400041189169642949
+    second: 00003_Surviving_Space_Press_Start-sheet_12
+  - first:
+      213: -8046924329025823684
+    second: 00003_Surviving_Space_Press_Start-sheet_13
+  - first:
+      213: 2456099632016889363
+    second: 00003_Surviving_Space_Press_Start-sheet_14
+  - first:
+      213: -384760406985073736
+    second: 00003_Surviving_Space_Press_Start-sheet_15
+  - first:
+      213: 3551178622052122408
+    second: 00003_Surviving_Space_Press_Start-sheet_16
+  - first:
+      213: 6106994875189578329
+    second: 00003_Surviving_Space_Press_Start-sheet_17
+  - first:
+      213: -2297384961763892819
+    second: 00003_Surviving_Space_Press_Start-sheet_18
+  - first:
+      213: 5576869676942047201
+    second: 00003_Surviving_Space_Press_Start-sheet_19
+  - first:
+      213: -833598436388897395
+    second: 00003_Surviving_Space_Press_Start-sheet_20
+  - first:
+      213: 578667595014689843
+    second: 00003_Surviving_Space_Press_Start-sheet_0
+  - first:
+      213: -5927689784727280486
+    second: 00003_Surviving_Space_Press_Start-sheet_1
+  - first:
+      213: -938552250370955352
+    second: 00003_Surviving_Space_Press_Start-sheet_2
+  - first:
+      213: 6441770477586853340
+    second: 00003_Surviving_Space_Press_Start-sheet_3
+  - first:
+      213: -8814441045751431788
+    second: 00003_Surviving_Space_Press_Start-sheet_4
+  - first:
+      213: -6750128985692812038
+    second: 00003_Surviving_Space_Press_Start-sheet_5
+  - first:
+      213: 3625551186392485807
+    second: 00003_Surviving_Space_Press_Start-sheet_6
+  - first:
+      213: 8747343019974224594
+    second: 00003_Surviving_Space_Press_Start-sheet_7
+  - first:
+      213: 1464707663469184421
+    second: 00003_Surviving_Space_Press_Start-sheet_8
+  - first:
+      213: 2107136002693745057
+    second: 00003_Surviving_Space_Press_Start-sheet_9
+  - first:
+      213: -6253166285609539375
+    second: 00003_Surviving_Space_Press_Start-sheet_10
+  - first:
+      213: 9136053923024158605
+    second: 00003_Surviving_Space_Press_Start-sheet_11
+  - first:
+      213: 5642351190895912271
+    second: 00003_Surviving_Space_Press_Start-sheet_12
+  - first:
+      213: 3254507471087026747
+    second: 00003_Surviving_Space_Press_Start-sheet_13
+  - first:
+      213: 2231486689205432202
+    second: 00003_Surviving_Space_Press_Start-sheet_14
+  - first:
+      213: 4393461016204327471
+    second: 00003_Surviving_Space_Press_Start-sheet_15
+  - first:
+      213: -839605246900203835
+    second: 00003_Surviving_Space_Press_Start-sheet_16
+  - first:
+      213: 4456568962485474296
+    second: 00003_Surviving_Space_Press_Start-sheet_17
+  - first:
+      213: -8489551166918179415
+    second: 00003_Surviving_Space_Press_Start-sheet_18
+  - first:
+      213: -5910291947831581102
+    second: 00003_Surviving_Space_Press_Start-sheet_19
+  - first:
+      213: -6404496196385641928
+    second: 00003_Surviving_Space_Press_Start-sheet_20
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: 00003_Surviving_Space_Press_Start-sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 300
+        width: 240
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33451eb9c17d70800800000000000000
+      internalID: 578667595014689843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 00003_Surviving_Space_Press_Start-sheet_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 285
+        width: 240
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a946e9a0c8d9cbda0800000000000000
+      internalID: -5927689784727280486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 00003_Surviving_Space_Press_Start-sheet_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 270
+        width: 240
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a7ee7173b799f2f0800000000000000
+      internalID: -938552250370955352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 00003_Surviving_Space_Press_Start-sheet_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 255
+        width: 240
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdda9219e14c56950800000000000000
+      internalID: 6441770477586853340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 00003_Surviving_Space_Press_Start-sheet_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 240
+        width: 240
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49dfc5ed190dca580800000000000000
+      internalID: -8814441045751431788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 00003_Surviving_Space_Press_Start-sheet_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 225
+        width: 240
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afc46b38379b252a0800000000000000
+      internalID: -6750128985692812038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 00003_Surviving_Space_Press_Start-sheet_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 210
+        width: 240
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: faf8be3589b805230800000000000000
+      internalID: 3625551186392485807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 00003_Surviving_Space_Press_Start-sheet_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 195
+        width: 240
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2da6e0a912ec46970800000000000000
+      internalID: 8747343019974224594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 00003_Surviving_Space_Press_Start-sheet_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 180
+        width: 240
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a58fdc0cdfa35410800000000000000
+      internalID: 1464707663469184421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 00003_Surviving_Space_Press_Start-sheet_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 165
+        width: 240
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a94ff5c70d0e3d10800000000000000
+      internalID: 2107136002693745057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 00003_Surviving_Space_Press_Start-sheet_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 150
+        width: 240
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d86bc8d46a4839a0800000000000000
+      internalID: -6253166285609539375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 00003_Surviving_Space_Press_Start-sheet_11
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 135
+        width: 240
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8f3baa53a8c9ce70800000000000000
+      internalID: 9136053923024158605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 00003_Surviving_Space_Press_Start-sheet_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 120
+        width: 240
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f456a5f7388ad4e40800000000000000
+      internalID: 5642351190895912271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 00003_Surviving_Space_Press_Start-sheet_13
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 105
+        width: 240
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b324ff44d455a2d20800000000000000
+      internalID: 3254507471087026747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 00003_Surviving_Space_Press_Start-sheet_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 90
+        width: 240
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8f2a172255d7fe10800000000000000
+      internalID: 2231486689205432202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 00003_Surviving_Space_Press_Start-sheet_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 75
+        width: 240
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2ab2654485b8fc30800000000000000
+      internalID: 4393461016204327471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 00003_Surviving_Space_Press_Start-sheet_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 60
+        width: 240
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ce85f2f97f1954f0800000000000000
+      internalID: -839605246900203835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 00003_Surviving_Space_Press_Start-sheet_17
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 45
+        width: 240
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f35af50cd9e8dd30800000000000000
+      internalID: 4456568962485474296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 00003_Surviving_Space_Press_Start-sheet_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 30
+        width: 240
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a5c659713e0f2a80800000000000000
+      internalID: -8489551166918179415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 00003_Surviving_Space_Press_Start-sheet_19
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 15
+        width: 240
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 256a5aa99cc6afda0800000000000000
+      internalID: -5910291947831581102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 00003_Surviving_Space_Press_Start-sheet_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 240
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83ae71154a8ae17a0800000000000000
+      internalID: -6404496196385641928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
