@@ -15,6 +15,10 @@ public class Projectile : MonoBehaviour
         public float projectileSpeed = 10f;
         public float maxDistance = 50f;
 
+
+    //Components of otherCollision
+        public float projectileDamage = 25f;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -35,12 +39,20 @@ public class Projectile : MonoBehaviour
         }
     }
 
-    void OnTriggerEnter2D(Collider2D hitInfo)
+    void OnTriggerEnter2D(Collider2D other)
     {
-        Debug.Log(hitInfo.name);
+        Debug.Log(other.name);
         GameObject effect = Instantiate(collisionEffect, transform.position, Quaternion.identity);
         Destroy(effect, 6f*Time.deltaTime);
         Destroy(gameObject);
+
+        if (other.tag == "Enemy")
+        {
+            other.GetComponent<EnemyStats>().hitPoints  = other.GetComponent<EnemyStats>().hitPoints - projectileDamage;
+            Debug.Log(other.GetComponent<EnemyStats>().hitPoints);
+        }
+
+
     }
 
 }

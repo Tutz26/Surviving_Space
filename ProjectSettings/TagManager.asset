@@ -6,6 +6,7 @@ TagManager:
   tags:
   - FirePoint
   - chargeVFX
+  - Enemy
   layers:
   - Default
   - TransparentFX
