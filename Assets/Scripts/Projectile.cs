@@ -6,6 +6,7 @@ public class Projectile : MonoBehaviour
 {
     //Component declarations:
         Rigidbody2D projectileRigidbody;
+       public GameObject collisionEffect;
 
     //Vector declarations:
         Vector2 initialPosition;
@@ -37,6 +38,8 @@ public class Projectile : MonoBehaviour
     void OnTriggerEnter2D(Collider2D hitInfo)
     {
         Debug.Log(hitInfo.name);
+        GameObject effect = Instantiate(collisionEffect, transform.position, Quaternion.identity);
+        Destroy(effect, 6f*Time.deltaTime);
         Destroy(gameObject);
     }
 

@@ -163,5 +163,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f1a488028c869d47bf1d9b6d51e75f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collisionEffect: {fileID: 2030192806903405728, guid: 625a23c9e552c9b4aa74d44e26ca135e,
+    type: 3}
   projectileSpeed: 50
   maxDistance: 50
