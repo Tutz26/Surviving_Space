@@ -33,8 +33,8 @@ public class PlayerController : MonoBehaviour
 
     //Bool declarations:
         bool isBraking;
-        // bool isMoving;
-        //These are the values that the Color Sliders return
+    
+            //These are the values that the Color Sliders return
                     //COLOR VALUES:
                         float m_Red, m_Blue, m_Green;
                         Color m_NewColor;
@@ -62,7 +62,7 @@ public class PlayerController : MonoBehaviour
 
         //Other objects initialization;
             cam = Camera.main;
-            firePoint = GameObject.FindGameObjectWithTag("FirePoint").GetComponent<FirePoint>();
+            firePoint = GetComponentInChildren<FirePoint>();
 
         //Speed Values:
 
@@ -102,6 +102,11 @@ public class PlayerController : MonoBehaviour
 
             //  rotationVector = Quaternion.LookRotation(new Vector2 (directionToLookAt.x,directionToLookAt.y));
 
+
+        //KILLED
+            if(this.GetComponent<Stats>().hitPoints <= 0f){
+                Destroy(gameObject);
+            }
 
     }
 
@@ -153,7 +158,7 @@ public class PlayerController : MonoBehaviour
         //Primary Weapon key    
             if (Input.GetMouseButtonDown(0))
             {                
-                if(GameObject.FindGameObjectWithTag("chargeVFX") == null)
+                if(firePoint.transform.childCount == 0)
                 {
                     firePoint.Shoot();             
                 }

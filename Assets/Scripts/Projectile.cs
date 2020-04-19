@@ -6,7 +6,7 @@ public class Projectile : MonoBehaviour
 {
     //Component declarations:
         Rigidbody2D projectileRigidbody;
-       public GameObject collisionEffect;
+        public GameObject collisionEffect;
 
     //Vector declarations:
         Vector2 initialPosition;
@@ -48,8 +48,12 @@ public class Projectile : MonoBehaviour
 
         if (other.tag == "Enemy")
         {
-            other.GetComponent<EnemyStats>().hitPoints  = other.GetComponent<EnemyStats>().hitPoints - projectileDamage;
-            Debug.Log(other.GetComponent<EnemyStats>().hitPoints);
+            other.GetComponent<Stats>().hitPoints  = other.GetComponent<Stats>().hitPoints - projectileDamage;
+        }
+
+         if (other.tag == "Player")
+        {
+            other.GetComponent<Stats>().hitPoints  = other.GetComponent<Stats>().hitPoints - projectileDamage;
         }
 
 
