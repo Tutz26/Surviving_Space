@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7928367796065077470}
   - component: {fileID: 7928367796065077465}
   - component: {fileID: 7928367796065077464}
-  - component: {fileID: 7928367796065077471}
+  - component: {fileID: 4928570851083377133}
   - component: {fileID: 7928367796065077466}
   - component: {fileID: 7928367796065077467}
   m_Layer: 0
@@ -97,7 +97,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ccdc45ef9d852646b86a3da253f5f1c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &7928367796065077471
+--- !u!114 &4928570851083377133
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -106,17 +106,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 7928367796065077469}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 267d48e86a3cd794484326051193d99d, type: 3}
+  m_Script: {fileID: 11500000, guid: ee27390eb07d88a47bf969ededafa123, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   hitPoints: 100
   shieldPoints: 100
   energyPoints: 20
-  enemySpeed: 5
-  enemyPanningSpeed: 3
-  enemyRotationSpeed: 0.8
-  enemyBrakeSpeed: 2
-  enemyShootingSpeed: 1
+  thrustSpeed: 5
+  thrustPanningSpeed: 3
+  thrustRotationSpeed: 0.8
+  brakeSpeed: 2
+  shootingSpeed: 1
 --- !u!50 &7928367796065077466
 Rigidbody2D:
   serializedVersion: 4

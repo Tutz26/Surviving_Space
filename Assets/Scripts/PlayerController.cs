@@ -6,7 +6,7 @@ public class PlayerController : MonoBehaviour
 {
     //Object and component declarations:
         Rigidbody2D myRigidbody;
-        PlayerStats playerStats;
+        Stats Stats;
         Camera cam;
         FirePoint firePoint;
 
@@ -55,7 +55,7 @@ public class PlayerController : MonoBehaviour
             // this.GetComponent<Renderer>().material.color = new Color(100F,1F,1F,1F); 
 
         //Get player stats:            
-            playerStats = this.GetComponent<PlayerStats>();
+            Stats = this.GetComponent<Stats>();
 
         //get rigidbody component, must be dynamic to use unity physics:
             myRigidbody = this.GetComponent<Rigidbody2D>();
@@ -66,18 +66,18 @@ public class PlayerController : MonoBehaviour
 
         //Speed Values:
 
-            thrustSpeed = playerStats.playerSpeed;
-            lateralThrustSpeed = playerStats.playerPanningSpeed;
-            brakeSpeed = playerStats.playerBrakeSpeed;
-            rotationSpeed = playerStats.playerRotationSpeed;
-            shootingSpeed = playerStats.playerShootingSpeed;
+            thrustSpeed = Stats.thrustSpeed;
+            lateralThrustSpeed = Stats.thrustPanningSpeed;
+            brakeSpeed = Stats.brakeSpeed;
+            rotationSpeed = Stats.thrustRotationSpeed;
+            shootingSpeed = Stats.shootingSpeed;
 
     }
 
     // Update is called once per frame
     void Update()
     {
-        rotationSpeed = playerStats.playerRotationSpeed;
+        rotationSpeed = Stats.thrustRotationSpeed;
         //Run Inputs:
             InputManager();
 

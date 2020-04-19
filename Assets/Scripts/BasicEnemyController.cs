@@ -6,7 +6,7 @@ public class BasicEnemyController : MonoBehaviour
 {
     //Object and component declarations:
         Rigidbody2D myRigidbody;
-        EnemyStats enemyStats;
+        Stats Stats;
 
     //Vector declarations:
         Vector2 movementVelocity;
@@ -32,7 +32,7 @@ public class BasicEnemyController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        enemyStats = this.GetComponent<EnemyStats>();
+        Stats = this.GetComponent<Stats>();
     }
 
     // Update is called once per frame
@@ -40,7 +40,7 @@ public class BasicEnemyController : MonoBehaviour
     {
         
 
-         if(enemyStats.hitPoints <= 0f)
+         if(Stats.hitPoints <= 0f)
         {
             Destroy(gameObject);
         }

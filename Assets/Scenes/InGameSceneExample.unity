@@ -533,6 +533,7 @@ GameObject:
   - component: {fileID: 799340475}
   - component: {fileID: 799340473}
   - component: {fileID: 799340474}
+  - component: {fileID: 799340476}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -649,17 +650,33 @@ MonoBehaviour:
   m_GameObject: {fileID: 799340470}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d4c2d9cdb9116a54c87a38a484832e76, type: 3}
+  m_Script: {fileID: 11500000, guid: ee27390eb07d88a47bf969ededafa123, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   hitPoints: 100
   shieldPoints: 100
   energyPoints: 20
-  playerSpeed: 5
-  playerPanningSpeed: 3
-  playerRotationSpeed: 0.8
-  playerBrakeSpeed: 2
-  playerShootingSpeed: 1
+  thrustSpeed: 5
+  thrustPanningSpeed: 3
+  thrustRotationSpeed: 0.8
+  brakeSpeed: 2
+  shootingSpeed: 1
+--- !u!58 &799340476
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 799340470}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 1
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -0.35}
+  serializedVersion: 2
+  m_Radius: 1.08
 --- !u!1001 &834051973
 PrefabInstance:
   m_ObjectHideFlags: 0
