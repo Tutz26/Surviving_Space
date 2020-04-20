@@ -5,16 +5,20 @@ using UnityEngine.SceneManagement;
 
 public class PressStart_Main_Menu : MonoBehaviour
 {
-    // Start is called before the first frame update
+    /// <summary>
+    /// Just a simple scene to Enter the game.
+    /// </summary>
     void Start()
     {
         
     }
 
-    // Update is called once per frame
+    /// <summary>
+    /// TODO: Change everything to options menu
+    /// </summary>
     void Update()
     {
-        if(Input.GetKeyDown("enter")){
+        if(Input.GetKeyDown("return")){
             SceneManager.LoadScene("InGameSceneExample");
         }
     }

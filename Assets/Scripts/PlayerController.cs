@@ -34,6 +34,7 @@ public class PlayerController : MonoBehaviour
     //Bool declarations:
         bool isBraking;
     
+    //TODO: This probably might be changed to attributes instade of player controller.
             //These are the values that the Color Sliders return
                     //COLOR VALUES:
                         float m_Red, m_Blue, m_Green;
@@ -43,7 +44,10 @@ public class PlayerController : MonoBehaviour
 
 
 
-    // Start is called before the first frame update
+    /// <summary>
+    /// Bring information about stats and attributes to the player.
+    /// TODO: Might be changed to another component.
+    /// </summary>
     void Start()
     {
             //COLOR OBJECTS
@@ -71,13 +75,15 @@ public class PlayerController : MonoBehaviour
             brakeSpeed = Stats.brakeSpeed;
             rotationSpeed = Stats.thrustRotationSpeed;
             shootingSpeed = Stats.shootingSpeed;
+            rotationSpeed = Stats.thrustRotationSpeed;
 
     }
 
-    // Update is called once per frame
-    void Update()
+    /// <summary>
+    /// Update used to keep track on inputs, mouse tracking and rotation since is direct applied to mouse instead of physics rotation.
+    /// </summary>
+    void Update()       
     {
-        rotationSpeed = Stats.thrustRotationSpeed;
         //Run Inputs:
             InputManager();
 
@@ -110,10 +116,11 @@ public class PlayerController : MonoBehaviour
 
     }
 
+    /// <summary>
+    /// Thrust, speed, acceleration, and braking logic is applied here to keep with physics by unity.
+    /// </summary>
     void FixedUpdate()
     {
-        //Movement logic happens here to work good with unity physics:
-
             //Thrust/Move
                 if(!isBraking)
                 {
@@ -134,9 +141,13 @@ public class PlayerController : MonoBehaviour
 
     }
     
+    /// <summary>
+    /// Input manager keeps all input tracking for the user.list (Only for keyboard and mouse)
+    /// TODO: Implement for Switch controllers and Generic GamePad.
+    /// </summary>
     public void InputManager()
     {
-        //Vertical and Horizontal thrust:
+        //Vertical and Horizontal thrust based on axis to be able to lerp:
             
             accelerationInput = Input.GetAxis("Vertical");
             lateralAccelerationInput = Input.GetAxis("Horizontal");
@@ -172,7 +183,10 @@ public class PlayerController : MonoBehaviour
 
     }
 
-        //COLOR ON GUI
+        /// <summary>
+        /// Creates slides on GUI to let the player change the color.list
+        /// TODO: Will change to another go referent to all GUI
+        /// </summary>
         void OnGUI()
     {
         //Use the Sliders to manipulate the RGB component of Color

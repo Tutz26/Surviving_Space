@@ -5,29 +5,34 @@ using UnityEngine;
 public class SpawnPoint : MonoBehaviour
 {
     //Object to spawn:
-    public GameObject enemyObject;
+        public GameObject enemyObject;
 
     //Random coords range to spawn:
-    float randX;
-    float randY;
+        float randX;
+        float randY;
     
     //Vector to create for spawning:
-    Vector2 spawnPoint;
+        Vector2 spawnPoint;
 
     //Spawn rates:
-    public float enemySpawnedLimit = 5f;
-    public float spawnRate = 2f;
-    float nextSpawn = 0.5f;
+        public float enemySpawnedLimit = 5f;
+        public float spawnRate = 2f;
+        float nextSpawn = 0.5f;
     
 
 
-    // Start is called before the first frame update
+    /// <summary>
+    /// When spawn is Started
+    /// </summary>
     void Start()
     {
         
     }
 
-    // Update is called once per frame
+    /// <summary>
+    /// It looks for ammount of children an keeps respawning so there is enough enemys in space
+    ///TODO: Will crate a respawn time based on probable server etc.. LONG TIME
+    /// </summary>
     void Update()
     {
 

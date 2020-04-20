@@ -37,7 +37,9 @@ public class BasicEnemyController : MonoBehaviour
 
 
 
-    // Start is called before the first frame update
+    /// <summary>
+    /// Create all variables for objects.
+    /// </summary>
     void Start()
     {
          //COLOR OBJECTS
@@ -69,6 +71,10 @@ public class BasicEnemyController : MonoBehaviour
 
     }
 
+    /// <summary>
+    /// Rotates the object towards the vector desired
+    /// </summary>
+    /// <param name="targetToRotate">X and Y coordinates for where you want the object to look at</param>
     void RotateTowards(Vector2 targetToRotate) 
     {
         //Create rotation vector to look at
@@ -83,7 +89,9 @@ public class BasicEnemyController : MonoBehaviour
     }
     
 
-    // Update is called once per frame
+    /// <summary>
+    /// Updates the hp to see if object should be destroyed.
+    /// </summary>
     void Update()
     {
         
@@ -95,6 +103,9 @@ public class BasicEnemyController : MonoBehaviour
 
     }
 
+    /// <summary>
+    /// Most movement logic is here because is based on unity physics.
+    /// </summary>
     void FixedUpdate()
     {
         //Calculate distance between current position and player.
@@ -132,39 +143,55 @@ public class BasicEnemyController : MonoBehaviour
 
     }   
 
+    /// <summary>
+    /// Applys negative force to the velocity to brake
+    /// </summary>
     void ApplyBrakes()
     {
         // Applys negative acceleration to velocity to brake
-        myRigidbody.AddForce(-brakeSpeed * myRigidbody.velocity);
+            myRigidbody.AddForce(-brakeSpeed * myRigidbody.velocity);
     }
 
+    /// <summary>
+    /// It generates projectile instance based on firepoint position and rotation.
+    /// </summary>
     void ShootTowardsTarget()
     {
-               if(firePoint.transform.childCount == 0)
-                {
-                    firePoint.Shoot();             
-                }
+        //It only creates another projectile if the firepoint is not charing.
+            if(firePoint.transform.childCount == 0)
+            {
+                firePoint.Shoot();             
+            }
     }
 
-
+    /// <summary>
+    /// Creates a random patrolling/roaming between a randomized x and y position on map.
+    /// </summary>
     void RandomPatrolling()
     {
-            
+        //Rotates the object towards the random point       
             RotateTowards(randomPointToPatrol);
+
+        //Add force towards the random position with a linear interpolation for acceleration simulation.            
             myRigidbody.AddForce((randomPointToPatrol - (Vector2) transform.position) * Mathf.Lerp(0f, 1f, thrustSpeed * Time.fixedDeltaTime));
 
+        //Calls for a change on the random position
             StartCoroutine(ChangeRandomPatrolPoint(10f));
 
     }
 
 
-    //Create a diferente patrol point after specified time
+    /// <summary>
+    /// Creates a different random position based on x and y coordinates at a certain time.
+    /// </summary>
+    /// <param name="time">Add time in floats as seconds.</param>
+    /// <returns></returns>
     IEnumerator ChangeRandomPatrolPoint(float time)
     {
         yield return new WaitForSeconds(time);
 
-            float randX = Random.Range(-100f, 100f);
-            float randY = Random.Range(-100f, 100f);
+            float randX = Random.Range(-40f, 40f);
+            float randY = Random.Range(-40f, 40f);
         
             randomPointToPatrol = new Vector2(randX, randY);
 

@@ -23,20 +23,26 @@ public class CameraController : MonoBehaviour
             float cameraRotationSpeed;
 
 
-    // Start is called before the first frame update
+    /// <summary>
+    /// Assign objects to vars
+    /// </summary>
     void Start()
     {
-        playerObject = GameObject.FindGameObjectWithTag("Player");
+        //Track player object:
+            playerObject = GameObject.FindGameObjectWithTag("Player");
 
         //Default values:
             cameraFollowSpeed = 5f;
 
-        //Camera arm length
+        //Set camera distance from the player (fixed)
             this.transform.position = new Vector2(this.transform.position.x, armLength);
 
 
     }
 
+    /// <summary>
+    /// Since the player is physics based the logic of position is placed in Fixed Update.
+    /// </summary>
     void FixedUpdate()
     {
 
@@ -45,7 +51,10 @@ public class CameraController : MonoBehaviour
 
    
     }
-    // Update is called once per frame
+    
+    /// <summary>
+    /// Updates the player position and the camera position.
+    /// </summary>
     void Update()
     {
 
@@ -53,7 +62,7 @@ public class CameraController : MonoBehaviour
         currentPosition = (Vector2) this.transform.position;
         newPosition = new Vector2(playerObject.transform.position.x, playerObject.transform.position.y + armLength);
 
-        //track rotation of self and player
+        //TODO: Create the rotation with the player to keep the aspect ratio relative to the player sight.
 
 
 
