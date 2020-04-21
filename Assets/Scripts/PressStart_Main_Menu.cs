@@ -18,7 +18,7 @@ public class PressStart_Main_Menu : MonoBehaviour
     /// </summary>
     void Update()
     {
-        if(Input.GetKeyDown("return")){
+        if(Input.GetKeyDown("return") || Input.GetKeyDown("intro") || Input.GetKeyDown("enter")){
             SceneManager.LoadScene("InGameSceneExample");
         }
     }

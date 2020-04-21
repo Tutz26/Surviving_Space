@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -109,10 +110,12 @@ public class PlayerController : MonoBehaviour
             //  rotationVector = Quaternion.LookRotation(new Vector2 (directionToLookAt.x,directionToLookAt.y));
 
 
-        //KILLED
+        //YOU're DEAD go back to main menu!!!!!
             if(this.GetComponent<Stats>().hitPoints <= 0f){
                 Destroy(gameObject);
+                SceneManager.LoadScene("Main_menu");
             }
+            
 
     }
 
