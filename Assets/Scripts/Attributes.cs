@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// All the attributes referent to player and enemy.
+/// </summary>
 public class Attributes : MonoBehaviour
 {
     //TW

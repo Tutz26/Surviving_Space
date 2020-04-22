@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+/// <summary>
+/// Press start to continue in scene.
+/// </summary>
 public class PressStart_Main_Menu : MonoBehaviour
 {
     /// <summary>

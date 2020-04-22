@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Prefab projectile generator.
+/// </summary>
 public class Projectile : MonoBehaviour
 {
     //Component declarations:

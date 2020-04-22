@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Random generated vector to spawn enemys
+/// </summary>
 public class SpawnPoint : MonoBehaviour
 {
     //Object to spawn:

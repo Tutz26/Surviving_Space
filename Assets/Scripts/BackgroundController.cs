@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Controlls the quad object to keep a nice background
+/// </summary>
 public class BackgroundController : MonoBehaviour
 {
     //This is script is the controller of the quad object to maintain a seamless background below the player to simulate a universe.

@@ -2,13 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Basic enemy AI that roams randomly, follows and attacks player
+/// </summary>
 public class BasicEnemyController : MonoBehaviour
 {
     //Object and component declarations:
         Rigidbody2D myRigidbody;
         Stats Stats;
         GameObject player;
-        public GameObject chargePrefab;
+        public GameObject chargeVFXProjectilePrefab;
         FirePoint firePoint;
 
 

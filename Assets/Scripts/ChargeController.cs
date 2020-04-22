@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Controls the vfx of the projectile charge
+/// </summary>
 public class ChargeController : MonoBehaviour
 {
         //Set the type of projectile used by the charge:

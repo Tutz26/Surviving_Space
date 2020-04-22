@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Controlls the crosshair position to stay with player
+/// </summary>
 public class CrosshairController : MonoBehaviour
 {
         //READ:

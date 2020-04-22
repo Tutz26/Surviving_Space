@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Contains all the basic stats for an enemy/player object
+/// </summary>
 public class Stats : MonoBehaviour
 {
 

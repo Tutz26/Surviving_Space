@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Location where the projectile and charge animation are generated.
+/// </summary>
 public class FirePoint : MonoBehaviour
 {
 
