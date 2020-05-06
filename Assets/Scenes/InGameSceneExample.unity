@@ -450,7 +450,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4899e47cca3e2b3419b6fc9c49e7f193, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerObj: {fileID: 0}
   bgSpeed: {x: 0, y: 0}
 --- !u!1 &799340470
 GameObject:
@@ -756,17 +755,17 @@ PrefabInstance:
     - target: {fileID: 2365522529993768785, guid: 3680032de1fc331478442785a4c6320a,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -375.4
+      value: -2307.4
       objectReference: {fileID: 0}
     - target: {fileID: 2365522529993768785, guid: 3680032de1fc331478442785a4c6320a,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 139.7
+      value: -1678.2
       objectReference: {fileID: 0}
     - target: {fileID: 2365522529993768785, guid: 3680032de1fc331478442785a4c6320a,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -24.767101
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2365522529993768785, guid: 3680032de1fc331478442785a4c6320a,
         type: 3}
